@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7c3558388.js" crossorigin="anonymous"></script>
     <title>Platzi Video</title>
 </head>
 <body>
@@ -15,7 +16,10 @@
         <figure class="header__logo--container">
             <img src="./Assets/logo-platzi-video-BW2.png" alt="Logo PlatiVideo">
         </figure>
-        <nav class="header-nav">
+        <nav class="header__nav">
+            <div class="header__nav--user">
+                <p><span><i class="far fa-user user-logo"></i></span> Perfil</p> 
+            </div>
             <ul class="header-nav__container">
                 <li class="header-nav__container--item"><a href="#">Cuenta</a></li>
                 <li class="header-nav__container--item"><a href="#">Cerrar Sesión</a></li>
@@ -23,16 +27,12 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Sección principal</h2>
+        <section class="main__search-section">
+            <h2 class="main__search-section--title">¿Qué quieres ver hoy?</h2>
+            <input class="main_search-section--input" type="text" placeholder="Buscar...">
         </section>
     </main>
     <footer>
-        <ul>
-            <li>Contáctanos</li>
-            <li>Política de privacidad</li>
-            <li>Términos y condiciones</li>
-        </ul>
-    </footer>s
+    </footer>
 </body>
 </html>
