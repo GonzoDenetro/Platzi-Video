@@ -352,6 +352,7 @@ footer a {
     height: 50px;
     background-color: rgb(12, 12, 12);
     border-radius: 50px;
+    cursor: pointer;
 }
 .bacl-description p {
     font-size: 1.8rem;
@@ -366,4 +367,31 @@ footer a {
 .play-back {
     font-size: 2.5rem;
     padding-right: 15px;
+}
+
+
+/* 404 */
+.section__notfound {
+    width: 100%;
+    height: 100%;
+}
+.notfound__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.notfound__container--title {
+    margin-top: 90px;
+    font-size: 9.5rem;
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin-bottom: 50px;
+}
+.notfound__container--description {
+    font-size: 6.5rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
