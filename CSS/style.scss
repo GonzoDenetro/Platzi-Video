@@ -6,6 +6,7 @@
 html {
     font-size: 62.5%;
 }
+$blanco: white;
 body {
     /* background:  #222831; */
     background: linear-gradient(60deg, #004da7 , #000 );
@@ -44,7 +45,7 @@ body {
     font-size: 1.9rem;
     font-weight: 400;
     font-family: "Inter",sans-serif;
-    color: white;
+    color: $blanco;
 }
 .user-logo {
     font-size: 2.5rem;
@@ -85,21 +86,27 @@ main {
     height: auto;
 }
 /* main searcher */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main__search-section {
+    @extend .flex;
     min-width: 250px;
     height: auto;
     margin: 70px 0 20px;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
 }
 .main__search-section--title {
     font-size: 2.6rem;
     font-family: "Inter", sans-serif;
     font-weight: 300;
     margin-bottom: 15px;
-    color: white;
+    color: $blanco;
 }
 .main_search-section--input {
     width: 70%;
@@ -199,10 +206,11 @@ main {
 /* LOGIN STYLE */
 .login,
 .regsiter {
-    display: flex;
+    @extend .flex;
+    /*display: flex;*/
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
     padding: 0 30px;
     min-height: calc(100vh - 200);
 }
